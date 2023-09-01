@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    <title>Harmony Heaven - Admin Sign Up </title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">H&H</h1>
+            <a href="#">Acerca de la tienda... </a>
+        </nav>
+    </header>
+
+    
+    <div class="login">
+        
+        <h2> REGISTRAR</h2>
+
+        <br><br>
+
+        <div class="input">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" class="input1" placeholder="Usuario" required>
+        </div>
+
+        <div class="input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" class="input1" placeholder="Contraseña"  required>
+        </div>
+
+        <div class="adminlevels">
+            <form action="#">
+                <label for="niveles">NIVEL</label>
+                <select name="Niveles" id="niveles" class="input2">
+                    <option value="nivel1">Miembro</option>
+                    <option value="nivel2">Administrador</option>
+                </select>
+            </form>
+        </div>
+
+
+        <div>
+            <div class="button">
+                <button class="btn">Iniciar Sesion</button>
+        </div>
+    </div>    
+
+    <script>
+        const images = [
+            'Fondos/fondo.jpg',
+            'Fondos/fondo1.jpg',
+            'Fondos/fondo2.jpg'
+        ];
+        let currentImage = 1;
+        function changeBackground() {
+            currentImage = (currentImage + 1) % images.length;
+            document.body.style.backgroundImage = `url(${images[currentImage]})`;
+        }
+        setInterval(changeBackground, 5000);
+    </script>
+
+<!-- Para cuando haya boton de cerrar sesion -->
+    <script>
+        function gotohome(){
+            window.location.href="index.php"
+        }
+    </script>
+
+</body>
+</html>
