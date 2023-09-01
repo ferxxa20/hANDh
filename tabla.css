@@ -1,0 +1,221 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppin&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* BARRA SUPERIOR - HEADER */
+
+.header .nav .logo
+{
+    padding-top: 0px;
+    color: #fff;
+    font-size: 0px;
+}
+
+.header {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.276);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav a {
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #ffc508;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.header .search {
+    color: transparent;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+}
+
+.header .search input {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.header .search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+::placeholder
+{
+    padding-top: 1000px;
+    color: #fff;
+    font-size: 18px;
+}
+::placeholder:active
+{
+    box-shadow: 0 0 50px rgba(232, 232, 232, 0.8);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header .nav {
+        margin-top: 10px;
+    }
+
+    .header .search {
+        margin-top: 10px;
+    }
+}
+
+/* CONTENEDOR DE ARTICULOS */
+
+.marcaimages
+{
+    position: collapse;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 12px;
+    align-items: center;
+    height: 100px;
+    border: 10px solid #dcdcdc;
+}
+
+.container {
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.358);
+    padding-right: 5px;;
+}
+
+.creative_text {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container-marca {
+    width: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+    border-radius: 30px;
+}
+.productosDiv{
+    width: 100%;
+    height: auto;
+}
+.product{
+    padding-top: 25px;
+    margin-left: 3%;
+    width: 27%;
+    height: 300px;
+    height: auto;
+}
+
+.imageProduct{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-image: url("https://www.mrcdinstrumentos.com.mx/shared/productos/16796/0370121506-01.jpg");
+}
+
+.caracteristicasProducto h1{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.caracteristicasProducto h2{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.caracteristicasProducto h3{
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    color: #e25634;
+}
+
+.botones{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.botones .e{
+    font-weight: 700;
+    color: #2b5f81;
+    border:3px solid #2b5f81;
+    border-radius: 15px ;
+    background-color: transparent;
+    height: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+}
+
+.botones .d{
+    font-weight: 700;
+    color: #a01010;
+    border:3px solid #a01010;
+    border-radius: 15px ;
+    background-color: transparent;
+    height: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+}
